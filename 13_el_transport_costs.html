@@ -7862,14 +7862,14 @@ a.anchor-link {
     <span class="s1">'Ocean</span><span class="se">\n</span><span class="s1">(Suez, pre-crisis)'</span><span class="p">,</span>
     <span class="s1">'Ocean</span><span class="se">\n</span><span class="s1">(Cape route)'</span><span class="p">,</span>
     <span class="s1">'Rail</span><span class="se">\n</span><span class="s1">(China–Europe)'</span><span class="p">,</span>
-    <span class="s1">'Rail-Air</span><span class="se">\n</span><span class="s1">(via Uzbekistan)'</span><span class="p">,</span>
+    <span class="s1">'Truck-Air</span><span class="se">\n</span><span class="s1">(via Uzbekistan)'</span><span class="p">,</span>
     <span class="s1">'Air</span><span class="se">\n</span><span class="s1">Freight'</span><span class="p">,</span>
     <span class="s1">'Sea-Air</span><span class="se">\n</span><span class="s1">(via Dubai)'</span><span class="p">,</span>
 <span class="p">]</span>
 
 <span class="n">cost_idx</span>  <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.30</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.8</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">]</span>
 <span class="n">time_days</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span>  <span class="mi">46</span><span class="p">,</span>   <span class="mi">25</span><span class="p">,</span>  <span class="mi">28</span><span class="p">,</span>  <span class="mi">7</span><span class="p">,</span>   <span class="mi">16</span><span class="p">]</span>
-<span class="n">co2_idx</span>   <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.38</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">]</span>
+<span class="n">co2_idx</span>   <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">,</span> <span class="mf">22.0</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">]</span>  <span class="c1"># EcoTransIT/industry emission factors</span>
 <span class="n">feasible</span>  <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Data ready ✓"</span><span class="p">)</span>
@@ -7992,7 +7992,7 @@ a.anchor-link {
 <span class="n">ax_top</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">modes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
 <span class="n">ax_top</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
-<span class="n">ax_top</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="n">ax_top</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
 <span class="n">ax_top</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper left'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">9.5</span><span class="p">)</span>
 <span class="n">ax_top</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
 <span class="n">ax_top</span><span class="o">.</span><span class="n">axvspan</span><span class="p">(</span>
@@ -8069,7 +8069,7 @@ a.anchor-link {
 <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">0.5</span><span class="p">,</span>
     <span class="o">-</span><span class="mf">0.025</span><span class="p">,</span>
-    <span class="s1">'Source: EssilorLuxottica Annual Report 2024; author elaboration from company disclosures'</span><span class="p">,</span>
+    <span class="s1">'Source: EssilorLuxottica Sustainability Report 2025; CO</span><span class="se">\u2082</span><span class="s1"> indices based on EcoTransIT industry emission factors'</span><span class="p">,</span>
     <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span>
     <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
     <span class="n">color</span><span class="o">=</span><span class="n">LGRAY</span>
