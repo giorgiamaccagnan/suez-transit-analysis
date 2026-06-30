@@ -7800,7 +7800,12 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;">
+<p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 4.3 — Implications for Supply Chain Management and Future Outlook</p>
+<p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p>
+<ul style="margin:0 0 8px 0;padding-left:20px;"><li>Author elaboration based on Sengupta (2024)</li><li>Rashid (2024)</li></ul>
+<p style="margin:0;"><strong>Description:</strong> Conceptual diagram presenting the Cascading Resilience Framework — an original synthesis linking geopolitical triggers, supply chain disruption layers (operational, strategic, structural), and long-term resilience outcomes. Provides the theoretical conclusion of the thesis.</p>
+</div>
 <h1 id="Fig-17-%E2%80%94-The-Cascading-Resilience-Framework">Fig 17 — The Cascading Resilience Framework<a class="anchor-link" href="#Fig-17-%E2%80%94-The-Cascading-Resilience-Framework">¶</a></h1><p>Three-layer recursive resilience diagram with triggers, feedback loop, and adaptive outcomes.</p>
 </div>
 </div>
@@ -7863,7 +7868,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The Cascading Resilience Framework — diagram data</span>
+<div class="highlight hl-ipython3"><pre><span></span>
 <span class="n">layers_data</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="mf">7.5</span><span class="p">,</span> <span class="mf">7.7</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">,</span> <span class="s1">'LAYER 1: Service Differentiation'</span><span class="p">,</span>
      <span class="s1">'Triage: which SKUs need priority rerouting?'</span><span class="p">,</span>
@@ -7914,7 +7919,7 @@ a.anchor-link {
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
 
-<span class="c1"># Background zones</span>
+
 <span class="n">lzone</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">),</span><span class="mf">2.8</span><span class="p">,</span><span class="mf">9.5</span><span class="p">,</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">'round,pad=0.1'</span><span class="p">,</span>
     <span class="n">fc</span><span class="o">=</span><span class="s1">'#fff8e1'</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="n">GOLD</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">lzone</span><span class="p">)</span>
@@ -7924,7 +7929,7 @@ a.anchor-link {
 <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">rzone</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">14.4</span><span class="p">,</span> <span class="mf">10.2</span><span class="p">,</span> <span class="s1">'ADAPTIVE</span><span class="se">\n</span><span class="s1">OUTCOMES'</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">'bold'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GREEN</span><span class="p">)</span>
 
-<span class="c1"># Three layers</span>
+
 <span class="n">box_w</span><span class="o">=</span><span class="mf">7.0</span><span class="p">;</span> <span class="n">box_h</span><span class="o">=</span><span class="mf">2.0</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">cx</span><span class="p">,</span> <span class="n">cy</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">subtitle</span><span class="p">,</span> <span class="n">bullets</span><span class="p">)</span> <span class="ow">in</span> <span class="n">layers_data</span><span class="p">:</span>
     <span class="n">r1</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="n">cx</span><span class="o">-</span><span class="n">box_w</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">cy</span><span class="o">-</span><span class="n">box_h</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">box_w</span><span class="p">,</span> <span class="n">box_h</span><span class="p">,</span>
@@ -7939,18 +7944,18 @@ a.anchor-link {
         <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">cx</span><span class="o">-</span><span class="mf">2.8</span><span class="p">,</span> <span class="n">cy</span><span class="o">+</span><span class="mf">0.0</span><span class="o">-</span><span class="n">j</span><span class="o">*</span><span class="mf">0.33</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'  - </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span>
                 <span class="n">ha</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GRAY</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 
-<span class="c1"># Arrows between layers</span>
+
 <span class="k">for</span> <span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[(</span><span class="mf">6.7</span><span class="p">,</span><span class="mf">6.1</span><span class="p">),(</span><span class="mf">4.1</span><span class="p">,</span><span class="mf">3.5</span><span class="p">)]:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">11.5</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">11.5</span><span class="p">,</span><span class="n">y1</span><span class="p">),</span>
         <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GRAY</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.8</span><span class="p">))</span>
-<span class="c1"># Recursive feedback arrow</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">12.2</span><span class="p">,</span><span class="mf">7.7</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">12.2</span><span class="p">,</span><span class="mf">1.5</span><span class="p">),</span>
     <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s1">'arc3,rad=-0.3'</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">13.0</span><span class="p">,</span> <span class="mf">4.6</span><span class="p">,</span> <span class="s1">'RECURSIVE</span><span class="se">\n</span><span class="s1">FEEDBACK</span><span class="se">\n</span><span class="s1">LOOP'</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">'bold'</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">13.0</span><span class="p">,</span> <span class="mf">3.9</span><span class="p">,</span> <span class="s1">'(each adaptation</span><span class="se">\n</span><span class="s1">creates new</span><span class="se">\n</span><span class="s1">dependencies)'</span><span class="p">,</span>
         <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">'italic'</span><span class="p">)</span>
 
-<span class="c1"># Triggers</span>
+
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">lbl</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">triggers</span><span class="p">):</span>
     <span class="n">y_t</span> <span class="o">=</span> <span class="mf">8.5</span> <span class="o">-</span> <span class="n">i</span><span class="o">*</span><span class="mf">1.38</span>
     <span class="n">rt</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="mf">0.35</span><span class="p">,</span><span class="n">y_t</span><span class="o">-</span><span class="mf">0.35</span><span class="p">),</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span>
@@ -7961,7 +7966,7 @@ a.anchor-link {
                 <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">2.9</span><span class="p">,</span> <span class="n">y_t</span><span class="p">),</span>
                 <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
 
-<span class="c1"># Outcomes</span>
+
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">lbl</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">outcomes</span><span class="p">):</span>
     <span class="n">y_o</span> <span class="o">=</span> <span class="mf">8.5</span> <span class="o">-</span> <span class="n">i</span><span class="o">*</span><span class="mf">1.38</span>
     <span class="n">ro</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="mf">13.15</span><span class="p">,</span><span class="n">y_o</span><span class="o">-</span><span class="mf">0.35</span><span class="p">),</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span>
@@ -7971,7 +7976,7 @@ a.anchor-link {
     <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">13.1</span><span class="p">,</span> <span class="mf">7.7</span><span class="o">-</span><span class="n">i</span><span class="o">*</span><span class="mf">0.7</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">12.05</span><span class="p">,</span> <span class="mf">7.7</span><span class="o">-</span><span class="n">i</span><span class="o">*</span><span class="mf">0.7</span><span class="p">),</span>
         <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
 
-<span class="c1"># Title</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mf">10.6</span><span class="p">,</span>
     <span class="s1">'The Cascading Resilience Framework (CRF): Recursive Resilience Under Polycrisis'</span><span class="p">,</span>
     <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">'bold'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span>
@@ -8004,7 +8009,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The Cascading Resilience Framework — diagram data</span>
+<div class="highlight hl-ipython3"><pre><span></span>
 <span class="n">layers_data</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="mf">7.5</span><span class="p">,</span> <span class="mf">7.7</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">,</span> <span class="s1">'LAYER 1: Service Differentiation'</span><span class="p">,</span>
      <span class="s1">'Triage: which SKUs need priority rerouting?'</span><span class="p">,</span>
@@ -8048,15 +8053,15 @@ a.anchor-link {
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mf">11.5</span><span class="p">))</span>
 
-<span class="c1"># I extend the lower part of the canvas to move the final quote downward</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.45</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># BACKGROUND ZONES</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="n">lzone</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">(</span>
     <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
@@ -8101,9 +8106,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># THREE LAYERS</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="n">box_w</span> <span class="o">=</span> <span class="mf">7.0</span>
 <span class="n">box_h</span> <span class="o">=</span> <span class="mf">2.0</span>
@@ -8168,9 +8173,9 @@ a.anchor-link {
         <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># ARROWS BETWEEN LAYERS</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="k">for</span> <span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[(</span><span class="mf">6.7</span><span class="p">,</span> <span class="mf">6.1</span><span class="p">),</span> <span class="p">(</span><span class="mf">4.1</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)]:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
@@ -8185,9 +8190,9 @@ a.anchor-link {
     <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># RECURSIVE FEEDBACK LOOP</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
     <span class="s1">''</span><span class="p">,</span>
@@ -8201,7 +8206,7 @@ a.anchor-link {
     <span class="p">)</span>
 <span class="p">)</span>
 
-<span class="c1"># I move the recursive feedback label left, away from the outcome boxes</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">12.30</span><span class="p">,</span>
     <span class="mf">5.22</span><span class="p">,</span>
@@ -8214,7 +8219,7 @@ a.anchor-link {
     <span class="n">linespacing</span><span class="o">=</span><span class="mf">0.9</span>
 <span class="p">)</span>
 
-<span class="c1"># I place the explanatory note lower and smaller to avoid overlap</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">12.30</span><span class="p">,</span>
     <span class="mf">4.55</span><span class="p">,</span>
@@ -8228,9 +8233,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># TRIGGERS</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">lbl</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">triggers</span><span class="p">):</span>
 
@@ -8272,9 +8277,9 @@ a.anchor-link {
     <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># OUTCOMES</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">lbl</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">outcomes</span><span class="p">):</span>
 
@@ -8316,9 +8321,9 @@ a.anchor-link {
     <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># TITLE</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">8</span><span class="p">,</span>
@@ -8341,9 +8346,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># FINAL QUOTE — MOVED LOWER</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">8</span><span class="p">,</span>
@@ -8363,9 +8368,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 
-<span class="c1"># =========================</span>
-<span class="c1"># SOURCE + EXPORT</span>
-<span class="c1"># =========================</span>
+
+
+
 
 <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">0.5</span><span class="p">,</span>
