@@ -7800,14 +7800,8 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Chart-2-%E2%80%94-Seaborne-Trade-by-Cargo-Type-(1990%E2%80%932023)">Chart 2 — Seaborne Trade by Cargo Type (1990–2023)<a class="anchor-link" href="#Chart-2-%E2%80%94-Seaborne-Trade-by-Cargo-Type-(1990%E2%80%932023)">¶</a></h1><p><strong>Thesis Section:</strong> 1.2 — The Physical Infrastructure of Global Trade</p>
-<p><strong>Data Sources:</strong></p>
-<ul>
-<li>UNCTAD, Review of Maritime Transport (various years, 2000–2025)</li>
-<li>UNCTAD Stat database: International seaborne trade by type of cargo</li>
-</ul>
-<p><strong>Description:</strong> Stacked area chart decomposing global seaborne trade (billion tons) into four cargo categories: crude oil and petroleum products, main dry bulks (iron ore, coal, grain), other dry cargo, and containerised goods. Shows the structural shift toward containerised trade.</p>
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;"><p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 1.2 — The Physical Infrastructure of Global Trade</p><p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p><ul style="margin:0 0 8px 0;padding-left:20px;"><li>UNCTAD, Review of Maritime Transport (various years, 2000–2025)</li><li>UNCTAD Stat database: International seaborne trade by type of cargo</li></ul><p style="margin:0;"><strong>Description:</strong> Stacked area chart decomposing global seaborne trade (billion tons) into four cargo categories: crude oil and petroleum products, main dry bulks (iron ore, coal, grain), other dry cargo, and containerised goods. Shows the structural shift toward containerised trade.</p></div>
+<h1 id="Chart-2-%E2%80%94-Seaborne-Trade-by-Cargo-Type-(1990%E2%80%932023)">Chart 2 — Seaborne Trade by Cargo Type (1990–2023)<a class="anchor-link" href="#Chart-2-%E2%80%94-Seaborne-Trade-by-Cargo-Type-(1990%E2%80%932023)">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7856,12 +7850,12 @@ a.anchor-link {
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">1990</span><span class="p">,</span> <span class="mi">2023</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
 
-<span class="c1"># Add total line</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'year'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'total_billion_tons'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">'--'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Total'</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper left'</span><span class="p">,</span> <span class="n">framealpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
-<span class="c1"># Key milestone annotations</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">'Container revolution</span><span class="se">\n</span><span class="s1">accelerates'</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">1995</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span>
            <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">),</span>
            <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">'round,pad=0.3'</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">'lightyellow'</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">))</span>
