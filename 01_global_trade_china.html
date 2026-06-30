@@ -7800,15 +7800,8 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Chart-1-%E2%80%94-Global-Trade-Explosion-and-China's-Rise-(1990%E2%80%932023)">Chart 1 — Global Trade Explosion and China's Rise (1990–2023)<a class="anchor-link" href="#Chart-1-%E2%80%94-Global-Trade-Explosion-and-China's-Rise-(1990%E2%80%932023)">¶</a></h1><p><strong>Thesis Section:</strong> 1.1 — Globalisation and the Lean Supply Chain</p>
-<p><strong>Data Sources:</strong></p>
-<ul>
-<li>World Bank, World Development Indicators: <code>NE.EXP.GNFS.CD</code> (Exports of goods and services, current USD)</li>
-<li>World Bank, World Development Indicators: <code>NE.EXP.GNFS.CD</code> for China</li>
-<li>Author's calculations for China's share</li>
-</ul>
-<p><strong>Description:</strong> Dual-axis chart showing the growth of world merchandise exports (left axis, USD trillions) alongside China's rising share of global exports (right axis, %). Highlights China's WTO accession in 2001 and the 2008 financial crisis.</p>
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;"><p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 1.1 — Globalisation and the Lean Supply Chain</p><p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p><ul style="margin:0 0 8px 0;padding-left:20px;"><li>World Bank, World Development Indicators: `NE.EXP.GNFS.CD` (Exports of goods and services, current USD)</li><li>World Bank, World Development Indicators: `NE.EXP.GNFS.CD` for China</li><li>Author's calculations for China's share</li></ul><p style="margin:0;"><strong>Description:</strong> Dual-axis chart showing the growth of world merchandise exports (left axis, USD trillions) alongside China's rising share of global exports (right axis, %). Highlights China's WTO accession in 2001 and the 2008 financial crisis.</p></div>
+<h1 id="Chart-1-%E2%80%94-Global-Trade-Explosion-and-China's-Rise-(1990%E2%80%932023)">Chart 1 — Global Trade Explosion and China's Rise (1990–2023)<a class="anchor-link" href="#Chart-1-%E2%80%94-Global-Trade-Explosion-and-China's-Rise-(1990%E2%80%932023)">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7825,7 +7818,7 @@ a.anchor-link {
 <span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="k">as</span> <span class="nn">mticker</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="c1"># Style</span>
+
 <span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">"whitegrid"</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s2">"serif"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
     <span class="s1">'font.family'</span><span class="p">:</span> <span class="s1">'serif'</span><span class="p">,</span>
@@ -7838,12 +7831,12 @@ a.anchor-link {
     <span class="s1">'savefig.bbox'</span><span class="p">:</span> <span class="s1">'tight'</span>
 <span class="p">})</span>
 
-<span class="c1"># Load data</span>
+
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/world_china_exports.csv'</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
-<span class="c1"># Left axis: World exports (trillions)</span>
+
 <span class="n">color_world</span> <span class="o">=</span> <span class="s1">'#1f4e79'</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'year'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'world_exports_usd_trillion'</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_world</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'year'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'world_exports_usd_trillion'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color_world</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> 
@@ -7853,7 +7846,7 @@ a.anchor-link {
 <span class="n">ax1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="n">color_world</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
 
-<span class="c1"># Right axis: China's share</span>
+
 <span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
 <span class="n">color_china</span> <span class="o">=</span> <span class="s1">'#c00000'</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'year'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'china_share_pct'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color_china</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">'--'</span><span class="p">,</span>
@@ -7862,11 +7855,11 @@ a.anchor-link {
 <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="n">color_china</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 
-<span class="c1"># Put ax1 annotations above ax2</span>
+
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_zorder</span><span class="p">(</span><span class="n">ax2</span><span class="o">.</span><span class="n">get_zorder</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="c1"># Annotations</span>
+
 <span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2001</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">':'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">'China joins WTO</span><span class="se">\n</span><span class="s1">(Dec 2001)'</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">2003</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
             <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">),</span>
@@ -7896,7 +7889,7 @@ a.anchor-link {
             <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">'-&gt;'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">),</span>
             <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">'round,pad=0.3'</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">'lightyellow'</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">))</span>
 
-<span class="c1"># Combined legend</span>
+
 <span class="n">lines1</span><span class="p">,</span> <span class="n">labels1</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
 <span class="n">lines2</span><span class="p">,</span> <span class="n">labels2</span> <span class="o">=</span> <span class="n">ax2</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">lines1</span> <span class="o">+</span> <span class="n">lines2</span><span class="p">,</span> <span class="n">labels1</span> <span class="o">+</span> <span class="n">labels2</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'upper left'</span><span class="p">,</span> <span class="n">framealpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
