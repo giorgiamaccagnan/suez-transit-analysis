@@ -7800,7 +7800,12 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;">
+<p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 2.1 — The Suez Canal: Data and Strategic Role</p>
+<p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p>
+<ul style="margin:0 0 8px 0;padding-left:20px;"><li>Suez Canal Authority Annual Reports, 2015–2025</li></ul>
+<p style="margin:0;"><strong>Description:</strong> Dual-axis chart showing Suez Canal annual revenue (USD billion, bars colour-coded by growth/crisis phase) and vessel transit volume (thousands, dashed line) from FY 2014/15 to FY 2024/25. A lower panel plots year-on-year revenue change (%). Highlights the record peak of $10.25 B in FY 2022/23 and the subsequent 61% revenue collapse driven by the Red Sea crisis diversion.</p>
+</div>
 <h1 id="Fig-8-%E2%80%94-Suez-Canal-Revenue-(Dual-axis-+-YoY-delta)">Fig 8 — Suez Canal Revenue (Dual-axis + YoY delta)<a class="anchor-link" href="#Fig-8-%E2%80%94-Suez-Canal-Revenue-(Dual-axis-+-YoY-delta)">¶</a></h1><p>Dual-axis chart: revenue bars coloured by phase + vessel transit line. Lower panel shows YoY % change.</p>
 </div>
 </div>
@@ -7850,7 +7855,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Data: Suez Canal Authority Annual Reports</span>
+<div class="highlight hl-ipython3"><pre><span></span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">'fy'</span><span class="p">:</span>       <span class="p">[</span><span class="s1">'2014/15'</span><span class="p">,</span><span class="s1">'2015/16'</span><span class="p">,</span><span class="s1">'2016/17'</span><span class="p">,</span><span class="s1">'2017/18'</span><span class="p">,</span><span class="s1">'2018/19'</span><span class="p">,</span>
                  <span class="s1">'2019/20'</span><span class="p">,</span><span class="s1">'2020/21'</span><span class="p">,</span><span class="s1">'2021/22'</span><span class="p">,</span><span class="s1">'2022/23'</span><span class="p">,</span><span class="s1">'2023/24'</span><span class="p">,</span><span class="s1">'2024/25'</span><span class="p">],</span>
