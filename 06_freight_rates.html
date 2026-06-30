@@ -7800,16 +7800,8 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Chart-6-%E2%80%94-Container-Freight-Rate-Spikes-During-Major-Disruptions-(2019%E2%80%932026)">Chart 6 — Container Freight Rate Spikes During Major Disruptions (2019–2026)<a class="anchor-link" href="#Chart-6-%E2%80%94-Container-Freight-Rate-Spikes-During-Major-Disruptions-(2019%E2%80%932026)">¶</a></h1><p><strong>Thesis Section:</strong> 1.4 — The Age of Convergent Disruptions</p>
-<p><strong>Data Sources:</strong></p>
-<ul>
-<li>Shanghai Shipping Exchange, Shanghai Containerized Freight Index (SCFI), composite and route-level data</li>
-<li>Drewry World Container Index (supplementary cross-check)</li>
-<li>Financial Times, "Gulf Freight Rates Jump," May 2026 (Hormuz data)</li>
-<li>UNCTAD, Review of Maritime Transport 2024 and 2025</li>
-</ul>
-<p><strong>Description:</strong> Multi-line time series showing SCFI composite and Shanghai–Rotterdam/Shanghai–Genoa route rates, with annotated disruption events (COVID, Ever Given, Red Sea, Hormuz).</p>
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;"><p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 1.4 — The Age of Convergent Disruptions</p><p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p><ul style="margin:0 0 8px 0;padding-left:20px;"><li>Shanghai Shipping Exchange, Shanghai Containerized Freight Index (SCFI), composite and route-level data</li><li>Drewry World Container Index (supplementary cross-check)</li><li>Financial Times, "Gulf Freight Rates Jump," May 2026 (Hormuz data)</li><li>UNCTAD, Review of Maritime Transport 2024 and 2025</li></ul><p style="margin:0;"><strong>Description:</strong> Multi-line time series showing SCFI composite and Shanghai–Rotterdam/Shanghai–Genoa route rates, with annotated disruption events (COVID, Ever Given, Red Sea, Hormuz).</p></div>
+<h1 id="Chart-6-%E2%80%94-Container-Freight-Rate-Spikes-During-Major-Disruptions-(2019%E2%80%932026)">Chart 6 — Container Freight Rate Spikes During Major Disruptions (2019–2026)<a class="anchor-link" href="#Chart-6-%E2%80%94-Container-Freight-Rate-Spikes-During-Major-Disruptions-(2019%E2%80%932026)">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7844,7 +7836,7 @@ a.anchor-link {
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
 
-<span class="c1"># Plot lines</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'scfi_composite'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'#1f4e79'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'SCFI Composite'</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'shanghai_rotterdam'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'#c00000'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.8</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">'--'</span><span class="p">,</span> 
         <span class="n">label</span><span class="o">=</span><span class="s1">'Shanghai → Rotterdam'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
@@ -7853,10 +7845,10 @@ a.anchor-link {
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'shanghai_uswc'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'#27ae60'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.8</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">':'</span><span class="p">,</span> 
         <span class="n">label</span><span class="o">=</span><span class="s1">'Shanghai → US West Coast'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
 
-<span class="c1"># Fill under SCFI</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'scfi_composite'</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'#1f4e79'</span><span class="p">)</span>
 
-<span class="c1"># Event shading and annotations</span>
+
 <span class="n">events</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s1">'COVID-19 Pandemic'</span><span class="p">,</span> <span class="s1">'2020-03-01'</span><span class="p">,</span> <span class="s1">'2022-06-01'</span><span class="p">,</span> <span class="s1">'#c00000'</span><span class="p">,</span> <span class="mf">0.06</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">'Red Sea Crisis'</span><span class="p">,</span> <span class="s1">'2023-11-01'</span><span class="p">,</span> <span class="s1">'2026-05-31'</span><span class="p">,</span> <span class="s1">'#e67e22'</span><span class="p">,</span> <span class="mf">0.06</span><span class="p">),</span>
@@ -7864,7 +7856,7 @@ a.anchor-link {
 <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">axvspan</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="n">start</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="n">end</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
 
-<span class="c1"># Specific event markers</span>
+
 <span class="n">events_point</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s1">'Ever Given</span><span class="se">\n</span><span class="s1">blockage'</span><span class="p">,</span> <span class="s1">'2021-03-23'</span><span class="p">,</span> <span class="mi">14800</span><span class="p">,</span> <span class="s1">'#c00000'</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">'COVID peak</span><span class="se">\n</span><span class="s1">$14,000/TEU'</span><span class="p">,</span> <span class="s1">'2021-09-15'</span><span class="p">,</span> <span class="mi">15500</span><span class="p">,</span> <span class="s1">'#555555'</span><span class="p">),</span>
@@ -7878,7 +7870,7 @@ a.anchor-link {
                <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span>
                <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">'round,pad=0.3'</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">'lightyellow'</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.85</span><span class="p">))</span>
 
-<span class="c1"># Pre-crisis baseline</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">830</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">':'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2019-12-15'</span><span class="p">),</span> <span class="mi">950</span><span class="p">,</span> <span class="s1">'Pre-COVID baseline ~$830'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">)</span>
 
