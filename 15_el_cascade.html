@@ -7800,7 +7800,12 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;">
+<p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 3.4 — Case Study: EssilorLuxottica — Response Strategies and Outcomes</p>
+<p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p>
+<ul style="margin:0 0 8px 0;padding-left:20px;"><li>Author elaboration based on EssilorLuxottica internal information</li><li>EssilorLuxottica Annual Reports 2023–2024</li></ul>
+<p style="margin:0;"><strong>Description:</strong> Swimlane Gantt chart mapping EssilorLuxottica's cascade of logistics responses from December 2023 to June 2026 across five operational dimensions: trigger events, strategic frames, AFA accessories, lenses, and sustainability/A2A. Illustrates the temporal sequencing and coordination of the firm's adaptive strategy.</p>
+</div>
 <h1 id="Fig-15-%E2%80%94-EssilorLuxottica-Cascade-of-Responses-(Swimlane-Gantt)">Fig 15 — EssilorLuxottica Cascade of Responses (Swimlane Gantt)<a class="anchor-link" href="#Fig-15-%E2%80%94-EssilorLuxottica-Cascade-of-Responses-(Swimlane-Gantt)">¶</a></h1><p>Chronological swimlane across 5 tracks: Triggers, Frames, AFA, Lenses, Sustainability.</p>
 </div>
 </div>
@@ -7850,9 +7855,9 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Figure data defined inline in the plot cell below</span>
-<span class="c1"># Timeline: Dec 2023 - Jun 2026 (30 units)</span>
-<span class="c1"># Lanes: Trigger Events, Frames, AFA, Lenses, Sustainability</span>
+<div class="highlight hl-ipython3"><pre><span></span>
+
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Fig 15: EL Cascade of Responses — swimlane Gantt timeline"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7877,7 +7882,7 @@ a.anchor-link {
         <span class="s1">'Chronological swimlane of adaptive strategies across product lines and disruption layers'</span><span class="p">,</span>
         <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GRAY</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">'italic'</span><span class="p">)</span>
 
-<span class="c1"># Time axis</span>
+
 <span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Dec 23'</span><span class="p">,</span><span class="s1">'Jan 24'</span><span class="p">,</span><span class="s1">'Mar 24'</span><span class="p">,</span><span class="s1">'May 24'</span><span class="p">,</span><span class="s1">'Jul 24'</span><span class="p">,</span><span class="s1">'Sep 24'</span><span class="p">,</span>
           <span class="s1">'Nov 24'</span><span class="p">,</span><span class="s1">'Jan 25'</span><span class="p">,</span><span class="s1">'Mar 25'</span><span class="p">,</span><span class="s1">'May 25'</span><span class="p">,</span><span class="s1">'Jul 25'</span><span class="p">,</span><span class="s1">'Sep 25'</span><span class="p">,</span>
           <span class="s1">'Nov 25'</span><span class="p">,</span><span class="s1">'Jan 26'</span><span class="p">,</span><span class="s1">'Mar 26'</span><span class="p">,</span><span class="s1">'May 26'</span><span class="p">]</span>
@@ -7887,7 +7892,7 @@ a.anchor-link {
     <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">xt</span><span class="p">,</span> <span class="n">xt</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">LGRAY</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">':'</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">LGRAY</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
 
-<span class="c1"># Lane backgrounds</span>
+
 <span class="n">lanes</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="mf">9.2</span><span class="p">,</span>  <span class="s1">'TRIGGER EVENTS'</span><span class="p">,</span>        <span class="s1">'#fff3e0'</span><span class="p">,</span> <span class="n">GOLD</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">7.5</span><span class="p">,</span>  <span class="s1">'FRAMES (replenishment)'</span><span class="p">,</span><span class="s1">'#e3f2fd'</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">),</span>
@@ -7901,29 +7906,29 @@ a.anchor-link {
     <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">'bold'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
 
-<span class="c1"># Responses (x_start, x_end, y_center, label, color)</span>
+
 <span class="n">responses</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="c1"># Triggers</span>
+    
     <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mf">1.5</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="s1">'Houthi attacks</span><span class="se">\n</span><span class="s1">begin (Nov 23)'</span><span class="p">,</span>   <span class="n">GOLD</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span>  <span class="mf">9.2</span><span class="p">,</span> <span class="s1">'US-Iran war</span><span class="se">\n</span><span class="s1">(Feb 26)'</span><span class="p">,</span>             <span class="n">RED</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span>  <span class="mf">9.2</span><span class="p">,</span> <span class="s1">'Hormuz</span><span class="se">\n</span><span class="s1">closure'</span><span class="p">,</span>                   <span class="n">RED</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">4</span><span class="p">,</span>  <span class="mf">5.5</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="s1">'Russia sanctions:</span><span class="se">\n</span><span class="s1">land route barred'</span><span class="p">,</span> <span class="n">GOLD</span><span class="p">),</span>
-    <span class="c1"># Frames</span>
+    
     <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>   <span class="mf">7.5</span><span class="p">,</span> <span class="s1">'Cape reroute</span><span class="se">\n</span><span class="s1">(+16d transit)'</span><span class="p">,</span>       <span class="s1">'#1565c0'</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">1</span><span class="p">,</span>  <span class="mf">4.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="s1">'Road via Russia</span><span class="se">\n</span><span class="s1">(considered)'</span><span class="p">,</span>      <span class="n">LGRAY</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span>   <span class="mf">7.5</span><span class="p">,</span> <span class="s1">'Rail-Air via</span><span class="se">\n</span><span class="s1">Uzbekistan'</span><span class="p">,</span>           <span class="n">BLUE</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">9</span><span class="p">,</span>  <span class="mi">16</span><span class="p">,</span>  <span class="mf">7.5</span><span class="p">,</span> <span class="s1">'Sea-Air via Dubai</span><span class="se">\n</span><span class="s1">(evaluated)'</span><span class="p">,</span>     <span class="s1">'#42a5f5'</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span>  <span class="mf">7.5</span><span class="p">,</span> <span class="s1">'Transpacific via</span><span class="se">\n</span><span class="s1">Long Beach'</span><span class="p">,</span>       <span class="s1">'#1565c0'</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span>  <span class="mf">7.5</span><span class="p">,</span> <span class="s1">'Ongoing</span><span class="se">\n</span><span class="s1">resilience review'</span><span class="p">,</span>         <span class="n">BLUE</span><span class="p">),</span>
-    <span class="c1"># AFA</span>
+    
     <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>   <span class="mf">5.8</span><span class="p">,</span> <span class="s1">'Emergency</span><span class="se">\n</span><span class="s1">air freight'</span><span class="p">,</span>             <span class="n">RED</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span>   <span class="mf">5.8</span><span class="p">,</span> <span class="s1">'Rail-Air</span><span class="se">\n</span><span class="s1">(Uzbekistan)'</span><span class="p">,</span>             <span class="s1">'#c62828'</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">6</span><span class="p">,</span>  <span class="mi">14</span><span class="p">,</span>  <span class="mf">5.8</span><span class="p">,</span> <span class="s1">'Full air freight</span><span class="se">\n</span><span class="s1">(forced)'</span><span class="p">,</span>         <span class="n">RED</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span>  <span class="mf">5.8</span><span class="p">,</span> <span class="s1">'Cape + air hybrid</span><span class="se">\n</span><span class="s1">(partial)'</span><span class="p">,</span>       <span class="s1">'#ef5350'</span><span class="p">),</span>
-    <span class="c1"># Lenses</span>
+    
     <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span>   <span class="mf">4.1</span><span class="p">,</span> <span class="s1">'Cape reroute</span><span class="se">\n</span><span class="s1">(sufficient)'</span><span class="p">,</span>         <span class="n">GREEN</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">8</span><span class="p">,</span>  <span class="mi">30</span><span class="p">,</span>  <span class="mf">4.1</span><span class="p">,</span> <span class="s1">'Cape route + A2A</span><span class="se">\n</span><span class="s1">stabilised'</span><span class="p">,</span>       <span class="s1">'#2e7d32'</span><span class="p">),</span>
-    <span class="c1"># A2A</span>
+    
     <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span>   <span class="mf">2.4</span><span class="p">,</span> <span class="s1">'A2A programme</span><span class="se">\n</span><span class="s1">launched'</span><span class="p">,</span>            <span class="s1">'#6a1b9a'</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">6</span><span class="p">,</span>  <span class="mi">12</span><span class="p">,</span>  <span class="mf">2.4</span><span class="p">,</span> <span class="s1">'SBTi targets</span><span class="se">\n</span><span class="s1">validated Nov 24'</span><span class="p">,</span>     <span class="s1">'#7b1fa2'</span><span class="p">),</span>
     <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span>  <span class="mf">2.4</span><span class="p">,</span> <span class="s1">'A2A expansion:</span><span class="se">\n</span><span class="s1">25</span><span class="si">% o</span><span class="s1">cean (frames)'</span><span class="p">,</span> <span class="s1">'#8e24aa'</span><span class="p">),</span>
@@ -7998,9 +8003,9 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Style loaded ✓"</span><span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># FIGURE SETUP</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">))</span>
 
@@ -8027,9 +8032,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># TIME AXIS</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">months</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">'Dec</span><span class="se">\n</span><span class="s1">2023'</span><span class="p">,</span> <span class="s1">'Jan</span><span class="se">\n</span><span class="s1">2024'</span><span class="p">,</span> <span class="s1">'Mar</span><span class="se">\n</span><span class="s1">2024'</span><span class="p">,</span> <span class="s1">'May</span><span class="se">\n</span><span class="s1">2024'</span><span class="p">,</span>
@@ -8062,9 +8067,9 @@ a.anchor-link {
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.70</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.70</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">LGRAY</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># LANE BACKGROUNDS</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">lanes</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="mf">9.25</span><span class="p">,</span> <span class="s1">'TRIGGER EVENTS'</span><span class="p">,</span>         <span class="s1">'#fff3e0'</span><span class="p">,</span> <span class="n">GOLD</span><span class="p">),</span>
@@ -8100,9 +8105,9 @@ a.anchor-link {
     <span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># HELPER FUNCTION FOR BARS</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="k">def</span> <span class="nf">add_response_bar</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">0.76</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="n">width</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">-</span> <span class="n">x0</span>
@@ -8148,18 +8153,18 @@ a.anchor-link {
     <span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># RESPONSE BARS</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">responses</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="c1"># Trigger events — staggered and shortened</span>
+    
     <span class="p">(</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">1.55</span><span class="p">,</span>  <span class="mf">9.25</span><span class="p">,</span> <span class="s1">'Houthi attacks</span><span class="se">\n</span><span class="s1">begin'</span><span class="p">,</span>              <span class="n">GOLD</span><span class="p">,</span> <span class="mf">0.70</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">4.00</span><span class="p">,</span> <span class="mf">5.55</span><span class="p">,</span>  <span class="mf">9.25</span><span class="p">,</span> <span class="s1">'Dual-use restrictions:</span><span class="se">\n</span><span class="s1">truck withdrawn'</span><span class="p">,</span> <span class="n">GOLD</span><span class="p">,</span> <span class="mf">0.70</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">14.00</span><span class="p">,</span> <span class="mf">16.00</span><span class="p">,</span> <span class="mf">9.25</span><span class="p">,</span> <span class="s1">'US–Iran war</span><span class="se">\n</span><span class="s1">(Feb 26)'</span><span class="p">,</span>              <span class="n">RED</span><span class="p">,</span>  <span class="mf">0.70</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">16.05</span><span class="p">,</span> <span class="mf">19.00</span><span class="p">,</span> <span class="mf">9.25</span><span class="p">,</span> <span class="s1">'Hormuz</span><span class="se">\n</span><span class="s1">closure'</span><span class="p">,</span>                    <span class="n">RED</span><span class="p">,</span>  <span class="mf">0.70</span><span class="p">),</span>
 
-    <span class="c1"># Frames — early overlapping actions are vertically separated</span>
+    
     <span class="p">(</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">4.00</span><span class="p">,</span>  <span class="mf">7.73</span><span class="p">,</span> <span class="s1">'Cape reroute</span><span class="se">\n</span><span class="s1">(+16d transit)'</span><span class="p">,</span>         <span class="s1">'#1565c0'</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mf">4.55</span><span class="p">,</span>  <span class="mf">7.27</span><span class="p">,</span> <span class="s1">'Road via Russia</span><span class="se">\n</span><span class="s1">considered'</span><span class="p">,</span>          <span class="n">LGRAY</span><span class="p">,</span>     <span class="mf">0.50</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">4.00</span><span class="p">,</span> <span class="mf">9.00</span><span class="p">,</span>  <span class="mf">7.50</span><span class="p">,</span> <span class="s1">'Rail-Air via</span><span class="se">\n</span><span class="s1">Uzbekistan'</span><span class="p">,</span>             <span class="n">BLUE</span><span class="p">,</span>      <span class="mf">0.72</span><span class="p">),</span>
@@ -8167,17 +8172,17 @@ a.anchor-link {
     <span class="p">(</span><span class="mf">16.00</span><span class="p">,</span> <span class="mf">22.00</span><span class="p">,</span> <span class="mf">7.50</span><span class="p">,</span> <span class="s1">'Transpacific via</span><span class="se">\n</span><span class="s1">Long Beach'</span><span class="p">,</span>        <span class="s1">'#1565c0'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">22.00</span><span class="p">,</span> <span class="mf">30.00</span><span class="p">,</span> <span class="mf">7.50</span><span class="p">,</span> <span class="s1">'Ongoing</span><span class="se">\n</span><span class="s1">resilience review'</span><span class="p">,</span>          <span class="n">BLUE</span><span class="p">,</span>      <span class="mf">0.72</span><span class="p">),</span>
 
-    <span class="c1"># AFA Accessories</span>
+    
     <span class="p">(</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">2.00</span><span class="p">,</span>  <span class="mf">5.80</span><span class="p">,</span> <span class="s1">'Emergency</span><span class="se">\n</span><span class="s1">air freight'</span><span class="p">,</span>               <span class="n">RED</span><span class="p">,</span>       <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">2.00</span><span class="p">,</span> <span class="mf">6.00</span><span class="p">,</span>  <span class="mf">5.80</span><span class="p">,</span> <span class="s1">'Rail-Air</span><span class="se">\n</span><span class="s1">Uzbekistan'</span><span class="p">,</span>                 <span class="s1">'#c62828'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">6.00</span><span class="p">,</span> <span class="mf">14.00</span><span class="p">,</span> <span class="mf">5.80</span><span class="p">,</span> <span class="s1">'Full air freight</span><span class="se">\n</span><span class="s1">forced'</span><span class="p">,</span>             <span class="n">RED</span><span class="p">,</span>       <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">14.00</span><span class="p">,</span> <span class="mf">30.00</span><span class="p">,</span><span class="mf">5.80</span><span class="p">,</span> <span class="s1">'Partial Cape</span><span class="se">\n</span><span class="s1">+ air hybrid'</span><span class="p">,</span>           <span class="s1">'#ef5350'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
 
-    <span class="c1"># Lenses</span>
+    
     <span class="p">(</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">8.00</span><span class="p">,</span>  <span class="mf">4.10</span><span class="p">,</span> <span class="s1">'Cape reroute</span><span class="se">\n</span><span class="s1">sufficient for lenses'</span><span class="p">,</span>  <span class="n">GREEN</span><span class="p">,</span>     <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">8.00</span><span class="p">,</span> <span class="mf">30.00</span><span class="p">,</span> <span class="mf">4.10</span><span class="p">,</span> <span class="s1">'Cape route + A2A</span><span class="se">\n</span><span class="s1">stabilised'</span><span class="p">,</span>         <span class="s1">'#2e7d32'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
 
-    <span class="c1"># Sustainability / A2A</span>
+    
     <span class="p">(</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">6.00</span><span class="p">,</span>  <span class="mf">2.40</span><span class="p">,</span> <span class="s1">'A2A programme</span><span class="se">\n</span><span class="s1">launched'</span><span class="p">,</span>              <span class="s1">'#6a1b9a'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">6.00</span><span class="p">,</span> <span class="mf">12.00</span><span class="p">,</span> <span class="mf">2.40</span><span class="p">,</span> <span class="s1">'SBTi targets</span><span class="se">\n</span><span class="s1">validated Nov 24'</span><span class="p">,</span>       <span class="s1">'#7b1fa2'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
     <span class="p">(</span><span class="mf">12.00</span><span class="p">,</span> <span class="mf">22.00</span><span class="p">,</span><span class="mf">2.40</span><span class="p">,</span> <span class="s1">'A2A expansion:</span><span class="se">\n</span><span class="s1">frames 25</span><span class="si">% o</span><span class="s1">cean'</span><span class="p">,</span>     <span class="s1">'#8e24aa'</span><span class="p">,</span> <span class="mf">0.72</span><span class="p">),</span>
@@ -8188,9 +8193,9 @@ a.anchor-link {
     <span class="n">add_response_bar</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">h</span><span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># SMALL NOTES UNDER SELECTED BARS</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">notes</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="mf">2.8</span><span class="p">,</span>  <span class="mf">6.93</span><span class="p">,</span> <span class="s1">'Withdrawn: dual-use</span><span class="se">\n</span><span class="s1">+ no cargo guarantor'</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">),</span>
@@ -8218,9 +8223,9 @@ a.anchor-link {
     <span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># FINAL QUOTE — MOVED LOWER</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">15</span><span class="p">,</span>
@@ -8241,9 +8246,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 
-<span class="c1"># =====================================================</span>
-<span class="c1"># SOURCE + EXPORT</span>
-<span class="c1"># =====================================================</span>
+
+
+
 
 <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">0.5</span><span class="p">,</span>
