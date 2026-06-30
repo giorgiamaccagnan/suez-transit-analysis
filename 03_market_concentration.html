@@ -7800,14 +7800,8 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Chart-3-%E2%80%94-Container-Shipping-Market-Concentration-(2025)">Chart 3 — Container Shipping Market Concentration (2025)<a class="anchor-link" href="#Chart-3-%E2%80%94-Container-Shipping-Market-Concentration-(2025)">¶</a></h1><p><strong>Thesis Section:</strong> 1.2 — The Physical Infrastructure of Global Trade</p>
-<p><strong>Data Sources:</strong></p>
-<ul>
-<li>Container News, "Shipping Alliances, Carriers and MSC Control Almost 83% of Market," 2025</li>
-<li>Alcott Global, "Ranking the Global Shipping Giants: Capacity 2024–2025," 2025</li>
-</ul>
-<p><strong>Description:</strong> Horizontal bar chart showing the market share of the four major shipping alliances/groups plus independent carriers. Highlights the extreme concentration of the container shipping industry (83% controlled by 4 groups).</p>
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;"><p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 1.2 — The Physical Infrastructure of Global Trade</p><p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p><ul style="margin:0 0 8px 0;padding-left:20px;"><li>Container News, "Shipping Alliances, Carriers and MSC Control Almost 83% of Market," 2025</li><li>Alcott Global, "Ranking the Global Shipping Giants: Capacity 2024–2025," 2025</li></ul><p style="margin:0;"><strong>Description:</strong> Horizontal bar chart showing the market share of the four major shipping alliances/groups plus independent carriers. Highlights the extreme concentration of the container shipping industry (83% controlled by 4 groups).</p></div>
+<h1 id="Chart-3-%E2%80%94-Container-Shipping-Market-Concentration-(2025)">Chart 3 — Container Shipping Market Concentration (2025)<a class="anchor-link" href="#Chart-3-%E2%80%94-Container-Shipping-Market-Concentration-(2025)">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7838,7 +7832,7 @@ a.anchor-link {
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/carrier_market_share.csv'</span><span class="p">)</span>
 
-<span class="c1"># Clean carrier names for display</span>
+
 <span class="n">display_names</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">'Ocean Alliance</span><span class="se">\n</span><span class="s1">(CMA CGM, COSCO, Evergreen, OOCL)'</span><span class="p">,</span>
     <span class="s1">'MSC</span><span class="se">\n</span><span class="s1">(Independent)'</span><span class="p">,</span>
@@ -7859,12 +7853,12 @@ a.anchor-link {
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'Container Shipping Market Concentration (2025)'</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">'bold'</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">35</span><span class="p">)</span>
 
-<span class="c1"># Add percentage labels</span>
+
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">bar</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">bars</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">'share_pct'</span><span class="p">])):</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">val</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">bar</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">+</span> <span class="n">bar</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s1">%'</span><span class="p">,</span> 
             <span class="n">va</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">'bold'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 
-<span class="c1"># Add concentration annotation</span>
+
 <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">,</span> <span class="s1">'Top 4 groups: 82.9%</span><span class="se">\n</span><span class="s1">of global capacity'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> 
         <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">'italic'</span><span class="p">,</span>
