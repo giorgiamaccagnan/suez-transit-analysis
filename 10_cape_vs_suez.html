@@ -7800,7 +7800,12 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown"><div style="background:#f8f9fa;border-left:4px solid #1f4e79;padding:14px 18px;margin-bottom:16px;font-family:sans-serif;font-size:13px;line-height:1.6;">
+<p style="margin:0 0 6px 0;"><strong>Thesis Sections:</strong> 3.1 — Immediate Operational Responses</p>
+<p style="margin:0 0 4px 0;"><strong>Data Sources:</strong></p>
+<ul style="margin:0 0 8px 0;padding-left:20px;"><li>Author elaboration based on Drewry (2024), Clarksons Research, carrier annual reports</li></ul>
+<p style="margin:0;"><strong>Description:</strong> Comparative analysis of the Suez Canal route versus Cape of Good Hope rerouting across key operational and cost dimensions — distance, transit time, fuel consumption, and total voyage cost. Illustrates the trade-offs that drove carriers' rerouting decisions during the crisis.</p>
+</div>
 <h1 id="Fig-10-%E2%80%94-Cape-vs-Suez:-Operational-&amp;-Cost-Comparison">Fig 10 — Cape vs Suez: Operational &amp; Cost Comparison<a class="anchor-link" href="#Fig-10-%E2%80%94-Cape-vs-Suez:-Operational-&amp;-Cost-Comparison">¶</a></h1><p>Horizontal grouped bars for 6 operational metrics + voyage cost waterfall decomposing the Cape rerouting premium.</p>
 </div>
 </div>
@@ -7912,7 +7917,7 @@ a.anchor-link {
 <span class="n">ax_left</span>  <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">ax_right</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
-<span class="c1"># Left: grouped horizontal bars (normalised)</span>
+
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">));</span> <span class="n">bar_h</span> <span class="o">=</span> <span class="mf">0.35</span>
 <span class="n">max_v</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">metrics</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">sv</span><span class="p">,</span> <span class="n">cv</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
@@ -7933,7 +7938,7 @@ a.anchor-link {
 <span class="n">p2</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">Patch</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span>  <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Cape of Good Hope'</span><span class="p">)</span>
 <span class="n">ax_left</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="o">=</span><span class="p">[</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">],</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'lower right'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
 
-<span class="c1"># I create a dedicated visual box for the Cape vs Suez percentage column</span>
+
 <span class="n">ax_left</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">111.5</span><span class="p">,</span> <span class="mf">5.45</span><span class="p">,</span>
     <span class="s1">'</span><span class="se">\u0394</span><span class="s1"> Cape</span><span class="se">\n</span><span class="s1">vs Suez'</span><span class="p">,</span>
@@ -7946,9 +7951,9 @@ a.anchor-link {
 <span class="p">)</span>
 
 <span class="n">rect</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">(</span>
-    <span class="p">(</span><span class="mf">101.5</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">),</span>      <span class="c1"># x, y: box starts above the legend area</span>
-    <span class="mi">34</span><span class="p">,</span>                <span class="c1"># width</span>
-    <span class="mf">4.85</span><span class="p">,</span>              <span class="c1"># height</span>
+    <span class="p">(</span><span class="mf">101.5</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">),</span>      
+    <span class="mi">34</span><span class="p">,</span>                
+    <span class="mf">4.85</span><span class="p">,</span>              
     <span class="n">boxstyle</span><span class="o">=</span><span class="s2">"round,pad=0.18"</span><span class="p">,</span>
     <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span>
     <span class="n">edgecolor</span><span class="o">=</span><span class="s2">"#333333"</span><span class="p">,</span>
@@ -7957,7 +7962,7 @@ a.anchor-link {
     <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span>
 <span class="p">)</span>
 
-<span class="c1">#ax_left.add_patch(rect)</span>
+
 
 <span class="sd">""" # I add a dark grey visual frame around the Cape vs Suez percentage column</span>
 <span class="sd">rect = mpatches.FancyBboxPatch(</span>
@@ -7973,7 +7978,7 @@ a.anchor-link {
 
 
 
-<span class="c1"># Right: waterfall</span>
+
 <span class="n">running</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">bot_l</span><span class="o">=</span><span class="p">[];</span> <span class="n">hgt_l</span><span class="o">=</span><span class="p">[];</span> <span class="n">col_l</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">lbl</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">typ</span> <span class="ow">in</span> <span class="n">cost_items</span><span class="p">:</span>
     <span class="k">if</span>   <span class="n">typ</span><span class="o">==</span><span class="s1">'base'</span><span class="p">:</span>  <span class="n">bot_l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="n">hgt_l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>     <span class="n">col_l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">BLUE</span><span class="p">);</span>    <span class="n">running</span> <span class="o">=</span> <span class="n">val</span>
